@@ -1,4 +1,5 @@
 import Modal from "./Modal";
+
 export default class Location {
   constructor() {
     this.geo = false;

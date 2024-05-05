@@ -28,6 +28,7 @@ export default class Search {
   tabClear() {
     this.inputSearch.remove();
   }
+
   debounce(callback, delay) {
     let timeout;
     return () => {

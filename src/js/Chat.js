@@ -130,12 +130,12 @@ export default class Chat {
           break;
       }
     });
-    this.link.ws.addEventListener("close", (e) => {
+    this.link.ws.addEventListener("close", () => {
       this.wsStatus = "close";
       this.wsStatusElmt.style.backgroundColor = "";
       this.showError();
     });
-    this.link.ws.addEventListener("error", (e) => {
+    this.link.ws.addEventListener("error", () => {
       this.wsStatusElmt.style.backgroundColor = "#68bbe4";
       this.wsStatus = "error";
     });
@@ -333,10 +333,10 @@ export default class Chat {
   emojiInputAction(e) {
     if (e.target.className === "messages-emoji__item") {
       const emoji = e.target.textContent;
-      console.log(emoji);
       this.container.querySelector(".input-field").value += emoji;
     }
   }
+
   // Открытие боковой шторки
   tabOpen(title, obj = {}) {
     this.tabTitle.textContent = title;
@@ -589,6 +589,7 @@ export default class Chat {
     this.popup = null;
     this.popupId = null;
   }
+
   saveElmt(e) {
     let file;
     const link = document.createElement("a");
@@ -620,6 +621,7 @@ export default class Chat {
       linkFile.click();
     }
   }
+
   deleteMessage(e) {
     // Основное поле
     const arr = [...this.rows.querySelectorAll(".mess-user-body")];

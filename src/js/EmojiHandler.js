@@ -42,6 +42,7 @@ export default class EmojiHandler {
     this.container.className = "messages__emoji";
     this.localDom.appendChild(this.container);
   }
+
   drawEmoji(data) {
     data.forEach((emoji) => {
       const li = document.createElement("li");
