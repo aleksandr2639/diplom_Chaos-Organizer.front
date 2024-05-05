@@ -1,0 +1,95 @@
+:root {
+  --win-width: 300px;
+}
+
+.modal_wrapper {
+  background-color: #000000ba;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 50%;
+  top: 50%;
+  font-size: 18px;
+  padding: 15px;
+  background-color: #e9e2cf;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+
+.modal_title {
+  text-align: center;
+}
+
+.modal_content {
+  text-align: left;
+}
+
+.input-ask-block {
+  margin: 20px;
+}
+
+.modal_input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+
+.modal_error {
+  visibility: hidden;
+}
+
+.textarea-ask {
+  resize: vertical;
+  max-height: 200px;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.btn_wrapper {
+  text-align: right;
+  margin: 10px 0 10px 20px;
+}
+
+.btnCancel {
+  padding: 10px 15px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #33383b;
+  border: solid 1px #33383b;
+  color: #b1b3b5;
+}
+
+.btnOk {
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #33383b;
+  border: solid 1px #33383b;
+  color: #b1b3b5;
+}
+
+.menu-upload {
+  white-space: nowrap;
+  z-index: 100;
+  position: absolute;
+  background-color: #a8bfae;
+  border-radius: 10px;
+  padding: 7px;
+  visibility: visible;
+  text-align: left;
+}

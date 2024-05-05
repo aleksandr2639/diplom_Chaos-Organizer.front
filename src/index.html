@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaos Organizer</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Chaos Organizer</h1>
+      <nav>
+        <div class="ws-status"></div>
+
+        <div class="menu">
+          <button class="button menu-info"></button>
+          <button class="button menu-find"></button>
+          <button class="button rec-video"></button>
+          <button class="button menu-option"></button>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="content-row" id="row">
+          <!-- items -->
+        </div>
+        <div class="tab-overlay">
+          <div class="tab-head">
+            <div class="tab-title"></div>
+            <button class="tab-closebtn">&times</button>
+          </div>
+          <div class="tab-content" id="tab-row" data-type="null">
+            <!-- tab items -->
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="message">
+          <div class="upload">
+            <button class="button menu-clip"></button>
+          </div>
+          <div class="emoji-container">
+            <button class="button menu-emoji"></button>
+          </div>
+          <form>
+            <label class="form-input">
+              <input
+                class="input-field"
+                id="ask"
+                placeholder="Введите сообщение"
+              />
+              <span class="visually-hidden">Поле ввода сообщения</span>
+            </label>
+            <button
+              class="btn-microphone"
+              id="askMe"
+              aria-label="Кнопка отправки сообщения"
+            >
+              <span data-type="audio"></span>
+            </button>
+          </form>
+        </div>
+      </footer>
+      <div class="mask"></div>
+    </main>
+  </body>
+</html>
