@@ -10,6 +10,7 @@
 ![Ссылки](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/ссылки.png)
 - сохранение в истории изображений, видео и аудио (как файлов) — через Drag & Drop и через иконку загрузки;
 ![Перетаскивание](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/перетаскивание.png)
+
 ![Скрепка](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/скрепка.png)
 - скачивание файлов на компьютер пользователя;
 ![Скачивание](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/скачать.png)
@@ -19,9 +20,27 @@
 
 - синхронизация: если приложение открыто в нескольких окнах или вкладках, то контент должен быть синхронизирован;
 - поиск по сообщениям (интерфейс + реализация на сервере);
-- запись видео и аудио, используя API браузера;
+![Поиск](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/поиск.png)
+- запись видео и аудио, используя API браузера; 
+![Видео и аудио](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/аудио.png)
+
+![Видео и аудио](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/видео.png)
 - отправка геолокации;
+![Геолокация](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/гео.png)
+
+![Геолокация](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/гео_ошибка.png)
 - воспроизведение видео/аудио, используя API браузера;
+![Видео и аудио](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/аудио%20сообщение.png)
+
+![Видео и аудио](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/видео%20сообщение.png)
 - отправка команд боту: @chaos: погода, бот должен отвечать рандомным прогнозом погоды, интегрироваться с реальными сервисами не требуется, команд должно быть не менее 5;
+![бот](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/бот.png)
+
+![бот](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/бот2.png)
 - добавление сообщения в избранное, должен быть интерфейс для просмотра избранного;
+![избранные](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/избранное%201.png)
+
+![избранные](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/избранное%202.png)
 - поддержка смайликов (emoji);
+![emoji](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/эмоджи.png)
+
