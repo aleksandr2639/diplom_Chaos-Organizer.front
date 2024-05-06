@@ -346,13 +346,13 @@ form {
 }
 
 .rec-panel-item {
-  margin: 0 3px;
-  color: #b1b3b5;
-  width: 40px;
-  height: 40px;
-  background-color: #2a2f32;
-  border: solid 1px #2a2f32;
+  background-color: #a8bfae;
+  border: none;
+  color: #343a41;
   cursor: pointer;
+  height: 40px;
+  margin: 0 3px;
+  width: 40px;
 }
 
 .send-btn {
