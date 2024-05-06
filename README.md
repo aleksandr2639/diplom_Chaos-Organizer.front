@@ -10,7 +10,7 @@
 ![Ссылки](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/ссылки.png)
 - сохранение в истории изображений, видео и аудио (как файлов) — через Drag & Drop и через иконку загрузки;
 ![Перетаскивание](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/перетаскивание.png)
-
+-Иконка 'Cкрепка' служит для вызова меню и выбора типа загружаемого файла.
 ![Скрепка](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/скрепка.png)
 - скачивание файлов на компьютер пользователя;
 ![Скачивание](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/скачать.png)
@@ -19,13 +19,14 @@
 ## Дополнительные для реализации функции:
 
 - синхронизация: если приложение открыто в нескольких окнах или вкладках, то контент должен быть синхронизирован;
-- поиск по сообщениям (интерфейс + реализация на сервере);
-![Поиск](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/поиск.png)
+- Для начала поиска нужно кликнуть на лупу. Откроется вкладка со строкой ввода текста.
+  ![Поиск](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/поиск.png)
 - запись видео и аудио, используя API браузера; 
+   1.Запись аудио-сообщений начинается с клика на 'микрофон'
 ![Видео и аудио](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/аудио.png)
-
+   2.Запись видео-сообщений начинается с клика на 'камеру'
 ![Видео и аудио](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/видео.png)
-- отправка геолокации;
+- отправка геолокации. Отправка определяется пунктом меню 'Геолокация'. Если галочка установлена данные будут отправляться.
 ![Геолокация](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/гео.png)
 
 ![Геолокация](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/гео_ошибка.png)
@@ -38,6 +39,7 @@
 
 ![бот](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/бот2.png)
 - добавление сообщения в избранное, должен быть интерфейс для просмотра избранного;
+  1.Для добавления в  избранное нужно во всплывающем меню выбрать 'В избранное'. При этом перед датой сообщения появится звездочка.
 ![избранные](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/избранное%201.png)
 
 ![избранные](https://github.com/aleksandr2639/diplom_Chaos-Organizer.front/blob/main/src/img/избранное%202.png)
