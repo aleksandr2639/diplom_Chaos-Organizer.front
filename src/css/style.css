@@ -72,11 +72,10 @@ nav {
 }
 
 .ws-status {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  border-radius: 10px;
+  padding: 5px;
+  color: #ffffff;
   background-color: #ad3636;
-  margin-left: 20px;
 }
 
 .menu {

@@ -37,42 +37,10 @@ export default class Chat {
     this.stepSend = 9;
     this.fixScroll = false;
     this.wsStatusElmt = this.container.querySelector(".ws-status");
+    this.wsStatusElmt.textContent = "Соединение не установлено";
   }
 
   init() {
-    this.rows.addEventListener("scroll", this.eventScrollRows.bind(this));
-    this.container.addEventListener("click", this.eventDomElt.bind(this));
-    this.container.addEventListener("dragenter", (e) => {
-      e.preventDefault();
-    });
-    this.container.addEventListener("dragover", (e) => {
-      e.preventDefault();
-      this.shadowDND();
-    });
-    this.container.addEventListener("dragleave", (e) => {
-      e.preventDefault();
-      if (e.target === this.mask) {
-        this.shadowDNDHidden();
-      }
-    });
-    this.container.addEventListener("drop", (e) => {
-      this.link.sendData(
-        e.dataTransfer.files,
-        Data.getTime(),
-        this.position.location,
-      );
-      if (e.target === this.mask) {
-        this.shadowDNDHidden();
-      }
-      e.preventDefault();
-    });
-    // Текстовый ввод
-    this.container
-      .querySelector(".btn-microphone")
-      .addEventListener("click", this.onSubmit.bind(this));
-    this.container
-      .querySelector(".input-field")
-      .addEventListener("input", this.onInput.bind(this));
     // WebSocket
     this.handlerWebSocket();
   }
@@ -90,7 +58,9 @@ export default class Chat {
       const msg = JSON.parse(e.data);
       switch (msg.event) {
         case "connect":
-          this.wsStatus = "ok";
+          // Handler
+          this.handlerEventsApp();
+          this.wsStatusElmt.textContent = "Соединение установлено";
           this.wsStatusElmt.style.backgroundColor = "#056162";
           this.noSendMsg = msg.noSendMsg;
           if (this.noSendMsg > 0) {
@@ -141,6 +111,44 @@ export default class Chat {
     });
   }
 
+  //Обработчик приложения
+
+  handlerEventsApp() {
+    this.rows.addEventListener("scroll", this.eventScrollRows.bind(this));
+    this.container.addEventListener("click", this.eventDomElt.bind(this));
+    this.container.addEventListener("dragenter", (e) => {
+      e.preventDefault();
+    });
+    this.container.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      this.shadowDND();
+    });
+    this.container.addEventListener("dragleave", (e) => {
+      e.preventDefault();
+      if (e.target === this.mask) {
+        this.shadowDNDHidden();
+      }
+    });
+    this.container.addEventListener("drop", (e) => {
+      this.link.sendData(
+        e.dataTransfer.files,
+        Data.getTime(),
+        this.position.location,
+      );
+      if (e.target === this.mask) {
+        this.shadowDNDHidden();
+      }
+      e.preventDefault();
+    });
+    // Текстовый ввод
+    this.container
+      .querySelector(".btn-microphone")
+      .addEventListener("click", this.onSubmit.bind(this));
+    this.container
+      .querySelector(".input-field")
+      .addEventListener("input", this.onInput.bind(this));
+  }
+
   // Заполнение при скролле вверх
   eventScrollRows() {
     if (this.rows.scrollTop === 0 && this.noSendMsg > 0) {
@@ -185,7 +193,8 @@ export default class Chat {
     this.rows.scrollTop = this.rows.scrollHeight;
   }
 
-  onInput() {
+  onInput(e) {
+    e.preventDefault();
     if (this.input.value.trim() !== "" && this.txtFlag === "") {
       this.txtFlag = "txt";
       this.btnMicrophone.innerHTML = `
